@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 450px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10%;
+}
+.ingeneer-panel{
+    display: none;
+}
+
+input[type='text'] {
+    width: 280px;
+    height: 50px;
+    font-size: 20pt;
+    text-align: end;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box; 
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    margin: 3px;
+    width: 50px;
+    font-size: 20pt;
+    height: 50px;
+}
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-auto-rows: 50px;
+    gap: 5px; 
+}
+
+.button-container button[onclick="calculateResult()"] {
+    grid-row: span 2;
+    height: 100%; 
+}
+
+.button-container button[onclick="insert('0')"] {
+    grid-column: span 2;
+}
